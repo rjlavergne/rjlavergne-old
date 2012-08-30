@@ -202,10 +202,10 @@ body {
 		font-size: 18px;
 		line-height: 1.3em;
 		padding: 5px 0;
-		&:hover {
-			text-decoration: none;
-			text-shadow: 1px 1px 25px #f00;
-		}
+	}
+	li a:hover {
+		text-decoration: none;
+		text-shadow: 1px 1px 25px #f00;
 	}
 
 }
@@ -225,6 +225,7 @@ body {
 		margin: 15px 15px 10px 15px;
 		position: relative;
 	}
+	h2 { text-shadow: none; }
 	h3 { margin: 10px; position: relative; }
 	p { margin: 10px; position: relative; width: auto; }
 	a { font-weight: bold; }
