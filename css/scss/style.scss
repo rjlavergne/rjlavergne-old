@@ -140,12 +140,15 @@ $eyegreen: #03ac24;
 
 .tabs {
 	background-color: #bebebe;
+	-webkit-box-shadow:  0px 5px 8px 8px rgba(190, 190, 190, 1);
+    -moz-box-shadow:  0px 5px 8px 8px rgba(190, 190, 190, 1);
+    box-shadow:  0px 5px 8px 8px rgba(190, 190, 190, 1);
 	position: fixed;
 	top: 100px;
 	width: 100%;
 	z-index: 1;
 
-	ul { height: 70px; padding: 10px 0; }
+	ul { height: 70px; padding: 10px 20px; }
 
 	li:last-child { float: right; }
 
@@ -177,7 +180,7 @@ $eyegreen: #03ac24;
 	background-repeat: repeat-y, no-repeat;
 	background-size: 100%, 45%;
 	background-attachment: fixed;
-	margin-top: 190px;
+	margin-top: 185px;
 }
 
 .quarter {
@@ -190,7 +193,7 @@ $eyegreen: #03ac24;
 		font-size: 28px;
 		font-style: italic;
 		margin: 4px;
-		padding: 10px 0 5px 8px;
+		padding: 35px 0 0 5px;
 		text-shadow: 1px 1px 30px $eyegreen;
 		text-decoration: none;
 		a { text-decoration: none; }
@@ -217,15 +220,12 @@ $eyegreen: #03ac24;
 	}
 
 }
-/*
-#tab1:hover { background: url('../img/sonic3.jpg') left bottom no-repeat; }
-#tab2:hover { background: url('../img/sonic4.jpg') left bottom no-repeat; }
-#tab3:hover { background: url('../img/sonic5.jpg') left bottom no-repeat; }
 
-*/
 /***** About Page *****/
 
 .about {
+	padding-bottom: 20px;
+
 	img {
 		border: 2px solid #999;
 		border-radius: 10px;
@@ -234,10 +234,10 @@ $eyegreen: #03ac24;
 		margin: 15px 15px 10px 15px;
 		position: relative;
 	}
-	h2 { text-shadow: none; }
 	h3 { margin: 10px; position: relative; }
 	p { margin: 10px; position: relative; width: auto; }
-	a { font-weight: bold; }
+	a { color: $eyegreen; font-weight: bold; }
+	h3 a { color: #fff; }
 }
 
 
