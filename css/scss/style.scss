@@ -78,31 +78,29 @@ td { vertical-align: top; }
 /************* MAIN STYLES *************/
 
 body {
-	background: #bebebe url('../img/sonic7.jpg') -100px 0 no-repeat;
+	background: #bebebe;
 	background-attachment: fixed;
 	font-family: Helvetica, Arial, sans-serif;
 }
-#container { width: 960px; margin: 20px auto 0 auto; }
+.container { width: 86%; margin: 0 auto; }
 
 /***** Color Variables *****/
+
+$eyegreen: #03ac24;
 
 /***** Header *****/
 
 #header {
-	background: #000 url('../img/Sonic2.png') 100% 0 no-repeat;
-	background-size: auto 100%;
-	border: 1px solid black;
-	border-radius: 5px;
-	-webkit-box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-	-moz-box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-	box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-	margin: 10px auto 20px auto;
-	padding: 0 50px 15px 15px;
-	width: 60%;
-
-	&:hover {
-		background: #000 url('../img/Sonic6.png') 100% 0 no-repeat;
-	}
+	background: #000 url(../img/soniceyes.png) 5% 50% no-repeat;
+	background-size: 15%;
+	-webkit-box-shadow:  0px 5px 20px 8px rgba(0, 0, 0, .9);
+    -moz-box-shadow:  0px 5px 20px 8px rgba(0, 0, 0, .9);
+    box-shadow:  0px 5px 20px 8px rgba(0, 0, 0, .9);
+	padding: 10px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
 
 	p {
 		color: #fff;
@@ -110,36 +108,44 @@ body {
 		float: left;
 		font-size: 18px;
 		font-style: italic;
-		margin: 2px 0 2px 2%;
+		margin: 2px 0 2px 14%;
 		padding: 0 10px;
 		text-shadow: 1px 1px 1px #222;
 
 		&:last-child { margin-left: 0; }
 	}	
-}
 
-#header {
 	h1 {
 		color: #fff;
 		font-size: 34px;
-		margin: 6px 2%;
+		margin: 0 0 0 16%;
 		text-shadow: 1px 1px 1px #222;
 	}
-	#header a {
+	
+	a {
 		color: #fff;
+		display: block;
+		float: left;
+		font-size: 18px;
+		font-style: italic;
+		margin: 2px 0 2px 1%;
+		padding: 0 10px;
 		text-decoration: none;
 
-		&:hover { color: #ff0f0f; }
+		&:hover { color: $eyegreen; }
 	} 
 }
 
 /***** Tabs *****/
 
-.tabs { 
-	border-bottom: 1px solid #ccc;
-	border-top: 1px solid #ccc;
-	margin: 10px auto;
-	width: 62%;
+.tabs {
+	background-color: #bebebe;
+	position: fixed;
+	top: 100px;
+	width: 100%;
+	z-index: 1;
+
+	ul { height: 70px; padding: 10px 0; }
 
 	li:last-child { float: right; }
 
@@ -157,38 +163,40 @@ body {
 		padding: 10px;
 		text-decoration: none;
 
-		&:hover { background: #999; color: #111; }
+		&:hover { background: $eyegreen; color: #111; }
 	}
-	li a.selected { background: #999; color: #111; }
+	li a.selected { background: $eyegreen; color: #111; }
 }
 
 
 /***** Lists *****/
 
+.tabbed {
+	background-image: url(../img/grad.png), url('../img/sonic7.jpg');
+	background-position: 0 0, 95% 0;
+	background-repeat: repeat-y, no-repeat;
+	background-size: 100%, 45%;
+	background-attachment: fixed;
+	margin-top: 190px;
+}
+
 .quarter {
-	background: #fff;
-	border-bottom: 1px solid #f00;
-	border-right: 1px solid #f00;
-	border-radius: 10px;
-	-webkit-box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-	-moz-box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-	box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-	margin: 30px auto;
-	width: 50%;
+	color: #fff;
+	margin: 0 auto 100px auto;
+	width: 78%;
 
 	h2 {
-		color: #000;
 		display: block;
 		font-size: 28px;
 		font-style: italic;
 		margin: 4px;
 		padding: 10px 0 5px 8px;
-		text-shadow: 1px 1px 30px #f00;
+		text-shadow: 1px 1px 30px $eyegreen;
 		text-decoration: none;
 		a { text-decoration: none; }
 	}
 	h3 { font-weight: bold; font-style: italic; font-size: 18px; margin: 5px; }
-	a { color: #000; text-decoration: none; }
+	a { color: #fff; text-decoration: none; }
 	
 	ol {
 		list-style-type: lower-roman;
@@ -205,15 +213,16 @@ body {
 	}
 	li a:hover {
 		text-decoration: none;
-		text-shadow: 1px 1px 25px #f00;
+		text-shadow: 1px 1px 25px $eyegreen;
 	}
 
 }
+/*
+#tab1:hover { background: url('../img/sonic3.jpg') left bottom no-repeat; }
+#tab2:hover { background: url('../img/sonic4.jpg') left bottom no-repeat; }
+#tab3:hover { background: url('../img/sonic5.jpg') left bottom no-repeat; }
 
-#tab1:hover { background: #fff url('../img/sonic3.jpg') right bottom no-repeat; }
-#tab2:hover { background: #fff url('../img/sonic4.jpg') right bottom no-repeat; }
-#tab3:hover { background: #fff url('../img/sonic5.jpg') right bottom no-repeat; }
-
+*/
 /***** About Page *****/
 
 .about {

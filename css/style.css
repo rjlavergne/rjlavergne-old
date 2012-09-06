@@ -326,82 +326,89 @@ td {
 /************* MAIN STYLES *************/
 /* line 80, scss/style.scss */
 body {
-  background: #bebebe url("../img/sonic7.jpg") -100px 0 no-repeat;
+  background: #bebebe;
   background-attachment: fixed;
   font-family: Helvetica, Arial, sans-serif;
 }
 
 /* line 85, scss/style.scss */
-#container {
-  width: 960px;
-  margin: 20px auto 0 auto;
+.container {
+  width: 86%;
+  margin: 0 auto;
 }
 
 /***** Color Variables *****/
 /***** Header *****/
-/* line 91, scss/style.scss */
+/* line 93, scss/style.scss */
 #header {
-  background: black url("../img/Sonic2.png") 100% 0 no-repeat;
-  background-size: auto 100%;
-  border: 1px solid black;
-  border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  margin: 10px auto 20px auto;
-  padding: 0 50px 15px 15px;
-  width: 60%;
+  background: black url(../img/soniceyes.png) 5% 50% no-repeat;
+  background-size: 15%;
+  -webkit-box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.9);
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
-/* line 103, scss/style.scss */
-#header:hover {
-  background: black url("../img/Sonic6.png") 100% 0 no-repeat;
-}
-/* line 107, scss/style.scss */
+/* line 105, scss/style.scss */
 #header p {
   color: #fff;
   display: block;
   float: left;
   font-size: 18px;
   font-style: italic;
-  margin: 2px 0 2px 2%;
+  margin: 2px 0 2px 14%;
   padding: 0 10px;
   text-shadow: 1px 1px 1px #222;
 }
-/* line 117, scss/style.scss */
+/* line 115, scss/style.scss */
 #header p:last-child {
   margin-left: 0;
 }
-
-/* line 122, scss/style.scss */
+/* line 118, scss/style.scss */
 #header h1 {
   color: #fff;
   font-size: 34px;
-  margin: 6px 2%;
+  margin: 0 0 0 16%;
   text-shadow: 1px 1px 1px #222;
 }
-/* line 128, scss/style.scss */
-#header #header a {
+/* line 125, scss/style.scss */
+#header a {
   color: #fff;
+  display: block;
+  float: left;
+  font-size: 18px;
+  font-style: italic;
+  margin: 2px 0 2px 1%;
+  padding: 0 10px;
   text-decoration: none;
 }
-/* line 132, scss/style.scss */
-#header #header a:hover {
-  color: #ff0f0f;
+/* line 135, scss/style.scss */
+#header a:hover {
+  color: #03ac24;
 }
 
 /***** Tabs *****/
-/* line 138, scss/style.scss */
+/* line 141, scss/style.scss */
 .tabs {
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  margin: 10px auto;
-  width: 62%;
+  background-color: #bebebe;
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  z-index: 1;
 }
-/* line 144, scss/style.scss */
+/* line 148, scss/style.scss */
+.tabs ul {
+  height: 70px;
+  padding: 10px 0;
+}
+/* line 150, scss/style.scss */
 .tabs li:last-child {
   float: right;
 }
-/* line 146, scss/style.scss */
+/* line 152, scss/style.scss */
 .tabs li a {
   background: #000;
   border-radius: 5px;
@@ -416,99 +423,93 @@ body {
   padding: 10px;
   text-decoration: none;
 }
-/* line 160, scss/style.scss */
+/* line 166, scss/style.scss */
 .tabs li a:hover {
-  background: #999;
+  background: #03ac24;
   color: #111;
 }
-/* line 162, scss/style.scss */
+/* line 168, scss/style.scss */
 .tabs li a.selected {
-  background: #999;
+  background: #03ac24;
   color: #111;
 }
 
 /***** Lists *****/
-/* line 168, scss/style.scss */
-.quarter {
-  background: #fff;
-  border-bottom: 1px solid #f00;
-  border-right: 1px solid #f00;
-  border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  margin: 30px auto;
-  width: 50%;
+/* line 174, scss/style.scss */
+.tabbed {
+  background-image: url(../img/grad.png), url("../img/sonic7.jpg");
+  background-position: 0 0, 95% 0;
+  background-repeat: repeat-y, no-repeat;
+  background-size: 100%, 45%;
+  background-attachment: fixed;
+  margin-top: 190px;
 }
-/* line 179, scss/style.scss */
+
+/* line 183, scss/style.scss */
+.quarter {
+  color: #fff;
+  margin: 0 auto 100px auto;
+  width: 78%;
+}
+/* line 188, scss/style.scss */
 .quarter h2 {
-  color: #000;
   display: block;
   font-size: 28px;
   font-style: italic;
   margin: 4px;
   padding: 10px 0 5px 8px;
-  text-shadow: 1px 1px 30px #f00;
+  text-shadow: 1px 1px 30px #03ac24;
   text-decoration: none;
 }
-/* line 188, scss/style.scss */
+/* line 196, scss/style.scss */
 .quarter h2 a {
   text-decoration: none;
 }
-/* line 190, scss/style.scss */
+/* line 198, scss/style.scss */
 .quarter h3 {
   font-weight: bold;
   font-style: italic;
   font-size: 18px;
   margin: 5px;
 }
-/* line 191, scss/style.scss */
+/* line 199, scss/style.scss */
 .quarter a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
-/* line 193, scss/style.scss */
+/* line 201, scss/style.scss */
 .quarter ol {
   list-style-type: lower-roman;
 }
-/* line 195, scss/style.scss */
+/* line 203, scss/style.scss */
 .quarter ol li {
   margin-left: 40px;
 }
-/* line 197, scss/style.scss */
+/* line 205, scss/style.scss */
 .quarter ul {
   margin: 5px;
   padding: 10px 0 5px 20px;
 }
-/* line 201, scss/style.scss */
+/* line 209, scss/style.scss */
 .quarter li {
   font-size: 18px;
   line-height: 1.3em;
   padding: 5px 0;
 }
-/* line 206, scss/style.scss */
+/* line 214, scss/style.scss */
 .quarter li a:hover {
   text-decoration: none;
-  text-shadow: 1px 1px 25px #f00;
+  text-shadow: 1px 1px 25px #03ac24;
 }
 
-/* line 213, scss/style.scss */
-#tab1:hover {
-  background: white url("../img/sonic3.jpg") right bottom no-repeat;
-}
+/*
+#tab1:hover { background: url('../img/sonic3.jpg') left bottom no-repeat; }
+#tab2:hover { background: url('../img/sonic4.jpg') left bottom no-repeat; }
+#tab3:hover { background: url('../img/sonic5.jpg') left bottom no-repeat; }
 
-/* line 214, scss/style.scss */
-#tab2:hover {
-  background: white url("../img/sonic4.jpg") right bottom no-repeat;
-}
-
-/* line 215, scss/style.scss */
-#tab3:hover {
-  background: white url("../img/sonic5.jpg") right bottom no-repeat;
-}
-
+*/
 /***** About Page *****/
-/* line 220, scss/style.scss */
+/* line 229, scss/style.scss */
 .about img {
   border: 2px solid #999;
   border-radius: 10px;
@@ -517,22 +518,22 @@ body {
   margin: 15px 15px 10px 15px;
   position: relative;
 }
-/* line 228, scss/style.scss */
+/* line 237, scss/style.scss */
 .about h2 {
   text-shadow: none;
 }
-/* line 229, scss/style.scss */
+/* line 238, scss/style.scss */
 .about h3 {
   margin: 10px;
   position: relative;
 }
-/* line 230, scss/style.scss */
+/* line 239, scss/style.scss */
 .about p {
   margin: 10px;
   position: relative;
   width: auto;
 }
-/* line 231, scss/style.scss */
+/* line 240, scss/style.scss */
 .about a {
   font-weight: bold;
 }
@@ -545,7 +546,7 @@ body {
    Please define your styles before this section.
    ========================================================================== */
 /* For image replacement */
-/* line 249, scss/style.scss */
+/* line 258, scss/style.scss */
 .ir {
   display: block;
   border: 0;
@@ -558,20 +559,20 @@ body {
   *line-height: 0;
 }
 
-/* line 250, scss/style.scss */
+/* line 259, scss/style.scss */
 .ir br {
   display: none;
 }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
-/* line 253, scss/style.scss */
+/* line 262, scss/style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-/* line 256, scss/style.scss */
+/* line 265, scss/style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -584,7 +585,7 @@ body {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-/* line 259, scss/style.scss */
+/* line 268, scss/style.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -595,31 +596,31 @@ body {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 262, scss/style.scss */
+/* line 271, scss/style.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* Contain floats: h5bp.com/q */
-/* line 265, scss/style.scss */
+/* line 274, scss/style.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 266, scss/style.scss */
+/* line 275, scss/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 267, scss/style.scss */
+/* line 276, scss/style.scss */
 .clearfix {
   *zoom: 1;
 }
 
 /* PRINT STYLES */
 @media print {
-  /* line 271, scss/style.scss */
+  /* line 280, scss/style.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -630,45 +631,45 @@ body {
   }
 
   /* Black prints faster: h5bp.com/s */
-  /* line 272, scss/style.scss */
+  /* line 281, scss/style.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 273, scss/style.scss */
+  /* line 282, scss/style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 274, scss/style.scss */
+  /* line 283, scss/style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 275, scss/style.scss */
+  /* line 284, scss/style.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
   /* Don't show links for images, or javascript/internal links */
-  /* line 276, scss/style.scss */
+  /* line 285, scss/style.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 277, scss/style.scss */
+  /* line 286, scss/style.scss */
   thead {
     display: table-header-group;
   }
 
   /* h5bp.com/t */
-  /* line 278, scss/style.scss */
+  /* line 287, scss/style.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 279, scss/style.scss */
+  /* line 288, scss/style.scss */
   img {
     max-width: 100% !important;
   }
@@ -677,13 +678,13 @@ body {
     margin: 0.5cm;
 }
 
-  /* line 281, scss/style.scss */
+  /* line 290, scss/style.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 282, scss/style.scss */
+  /* line 291, scss/style.scss */
   h2, h3 {
     page-break-after: avoid;
   }
