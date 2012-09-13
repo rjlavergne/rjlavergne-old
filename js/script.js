@@ -9,7 +9,6 @@ $('#reference').on('hover', function(event) {
 			$('#contact-me').fadeOut(300);
 		}
 	});
-	$('#contact-me').fadeOut(300);
 });
 
 
