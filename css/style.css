@@ -42,14 +42,14 @@ body {
 
 /* line 10, scss/style.scss */
 ::-moz-selection {
-  background: #ff0000;
+  background: #03ac24;
   color: #fff;
   text-shadow: none;
 }
 
 /* line 11, scss/style.scss */
 ::selection {
-  background: #ff0000;
+  background: #03ac24;
   color: #fff;
   text-shadow: none;
 }
@@ -339,7 +339,7 @@ body {
 
 /***** Color Variables *****/
 /***** Header *****/
-/* line 93, scss/style.scss */
+/* line 94, scss/style.scss */
 #header {
   background: black url(../img/soniceyes.png) 5% 50% no-repeat;
   background-size: 15%;
@@ -352,29 +352,14 @@ body {
   width: 100%;
   z-index: 2;
 }
-/* line 105, scss/style.scss */
-#header p {
-  color: #fff;
-  display: block;
-  float: left;
-  font-size: 18px;
-  font-style: italic;
-  margin: 2px 0 2px 14%;
-  padding: 0 10px;
-  text-shadow: 1px 1px 1px #222;
-}
-/* line 115, scss/style.scss */
-#header p:last-child {
-  margin-left: 0;
-}
-/* line 118, scss/style.scss */
+/* line 106, scss/style.scss */
 #header h1 {
   color: #fff;
   font-size: 34px;
   margin: 0 0 0 16%;
   text-shadow: 1px 1px 1px #222;
 }
-/* line 125, scss/style.scss */
+/* line 113, scss/style.scss */
 #header a {
   color: #fff;
   display: block;
@@ -385,76 +370,106 @@ body {
   padding: 0 10px;
   text-decoration: none;
 }
-/* line 135, scss/style.scss */
+/* line 123, scss/style.scss */
 #header a:hover {
   color: #03ac24;
 }
+/* line 126, scss/style.scss */
+#header #reference {
+  margin-left: 15%;
+}
+/* line 128, scss/style.scss */
+#header #contact-me {
+  display: none;
+  left: 19%;
+  position: fixed;
+  top: 90px;
+  width: 17%;
+}
+/* line 135, scss/style.scss */
+#header #contact-me ul {
+  background: #666;
+  padding: 0 5px;
+  text-align: center;
+}
+/* line 137, scss/style.scss */
+#header #contact-me li {
+  border-bottom: 1px solid #bebebe;
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+  padding: 5px 0;
+}
+/* line 145, scss/style.scss */
+#header #contact-me li:last-child {
+  border-bottom: none;
+}
+/* line 147, scss/style.scss */
+#header #contact-me a {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
 
 /***** Tabs *****/
-/* line 141, scss/style.scss */
+/* line 157, scss/style.scss */
 .tabs {
-  background-color: #bebebe;
-  -webkit-box-shadow: 0px 5px 8px 8px #bebebe;
-  -moz-box-shadow: 0px 5px 8px 8px #bebebe;
-  box-shadow: 0px 5px 8px 8px #bebebe;
   position: fixed;
-  top: 100px;
-  width: 100%;
-  z-index: 1;
+  top: 20px;
+  width: 50%;
+  left: 50%;
+  z-index: 5;
 }
-/* line 151, scss/style.scss */
+/* line 164, scss/style.scss */
 .tabs ul {
   height: 70px;
   padding: 10px 20px;
 }
-/* line 153, scss/style.scss */
-.tabs li:last-child {
-  float: right;
-}
-/* line 155, scss/style.scss */
+/* line 166, scss/style.scss */
 .tabs li a {
-  background: #000;
+  background: #bebebe;
   border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  color: #eee;
+  -webkit-box-shadow: 2px 2px 10px rgba(200, 200, 200, 0.8);
+  -moz-box-shadow: 2px 2px 10px rgba(200, 200, 200, 0.8);
+  box-shadow: 2px 2px 10px rgba(200, 200, 200, 0.8);
+  color: #000;
   display: block;
-  font-size: 20px;
+  font-size: 16px;
   float: left;
   margin: 10px 15px;
-  padding: 10px;
+  padding: 5px;
   text-decoration: none;
 }
-/* line 169, scss/style.scss */
+/* line 180, scss/style.scss */
 .tabs li a:hover {
   background: #03ac24;
   color: #111;
 }
-/* line 171, scss/style.scss */
+/* line 182, scss/style.scss */
 .tabs li a.selected {
   background: #03ac24;
   color: #111;
 }
 
 /***** Lists *****/
-/* line 177, scss/style.scss */
+/* line 188, scss/style.scss */
 .tabbed {
   background-image: url(../img/grad.png), url("../img/sonic7.jpg");
   background-position: 0 0, 95% 0;
   background-repeat: repeat-y, no-repeat;
   background-size: 100%, 45%;
   background-attachment: fixed;
-  margin-top: 185px;
+  margin-top: 95px;
 }
 
-/* line 186, scss/style.scss */
+/* line 197, scss/style.scss */
 .quarter {
   color: #fff;
-  margin: 0 auto 100px auto;
+  margin: 0 auto;
   width: 78%;
 }
-/* line 191, scss/style.scss */
+/* line 202, scss/style.scss */
 .quarter h2 {
   display: block;
   font-size: 28px;
@@ -464,53 +479,53 @@ body {
   text-shadow: 1px 1px 30px #03ac24;
   text-decoration: none;
 }
-/* line 199, scss/style.scss */
+/* line 210, scss/style.scss */
 .quarter h2 a {
   text-decoration: none;
 }
-/* line 201, scss/style.scss */
+/* line 212, scss/style.scss */
 .quarter h3 {
   font-weight: bold;
   font-style: italic;
   font-size: 18px;
   margin: 5px;
 }
-/* line 202, scss/style.scss */
+/* line 213, scss/style.scss */
 .quarter a {
   color: #fff;
   text-decoration: none;
 }
-/* line 204, scss/style.scss */
+/* line 215, scss/style.scss */
 .quarter ol {
   list-style-type: lower-roman;
 }
-/* line 206, scss/style.scss */
+/* line 217, scss/style.scss */
 .quarter ol li {
   margin-left: 40px;
 }
-/* line 208, scss/style.scss */
+/* line 219, scss/style.scss */
 .quarter ul {
   margin: 5px;
   padding: 10px 0 5px 20px;
 }
-/* line 212, scss/style.scss */
+/* line 223, scss/style.scss */
 .quarter li {
   font-size: 18px;
   line-height: 1.3em;
   padding: 5px 0;
 }
-/* line 217, scss/style.scss */
+/* line 228, scss/style.scss */
 .quarter li a:hover {
+  color: #03ac24;
   text-decoration: none;
-  text-shadow: 1px 1px 25px #03ac24;
 }
 
 /***** About Page *****/
-/* line 226, scss/style.scss */
+/* line 237, scss/style.scss */
 .about {
   padding-bottom: 20px;
 }
-/* line 229, scss/style.scss */
+/* line 240, scss/style.scss */
 .about img {
   border: 2px solid #999;
   border-radius: 10px;
@@ -519,23 +534,23 @@ body {
   margin: 15px 15px 10px 15px;
   position: relative;
 }
-/* line 237, scss/style.scss */
+/* line 248, scss/style.scss */
 .about h3 {
   margin: 10px;
   position: relative;
 }
-/* line 238, scss/style.scss */
+/* line 249, scss/style.scss */
 .about p {
   margin: 10px;
   position: relative;
   width: auto;
 }
-/* line 239, scss/style.scss */
+/* line 250, scss/style.scss */
 .about a {
   color: #03ac24;
   font-weight: bold;
 }
-/* line 240, scss/style.scss */
+/* line 251, scss/style.scss */
 .about h3 a {
   color: #fff;
 }
@@ -548,7 +563,7 @@ body {
    Please define your styles before this section.
    ========================================================================== */
 /* For image replacement */
-/* line 258, scss/style.scss */
+/* line 269, scss/style.scss */
 .ir {
   display: block;
   border: 0;
@@ -561,20 +576,20 @@ body {
   *line-height: 0;
 }
 
-/* line 259, scss/style.scss */
+/* line 270, scss/style.scss */
 .ir br {
   display: none;
 }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
-/* line 262, scss/style.scss */
+/* line 273, scss/style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-/* line 265, scss/style.scss */
+/* line 276, scss/style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -587,7 +602,7 @@ body {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-/* line 268, scss/style.scss */
+/* line 279, scss/style.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -598,31 +613,31 @@ body {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 271, scss/style.scss */
+/* line 282, scss/style.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* Contain floats: h5bp.com/q */
-/* line 274, scss/style.scss */
+/* line 285, scss/style.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 275, scss/style.scss */
+/* line 286, scss/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 276, scss/style.scss */
+/* line 287, scss/style.scss */
 .clearfix {
   *zoom: 1;
 }
 
 /* PRINT STYLES */
 @media print {
-  /* line 280, scss/style.scss */
+  /* line 291, scss/style.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -633,45 +648,45 @@ body {
   }
 
   /* Black prints faster: h5bp.com/s */
-  /* line 281, scss/style.scss */
+  /* line 292, scss/style.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 282, scss/style.scss */
+  /* line 293, scss/style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 283, scss/style.scss */
+  /* line 294, scss/style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 284, scss/style.scss */
+  /* line 295, scss/style.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
   /* Don't show links for images, or javascript/internal links */
-  /* line 285, scss/style.scss */
+  /* line 296, scss/style.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 286, scss/style.scss */
+  /* line 297, scss/style.scss */
   thead {
     display: table-header-group;
   }
 
   /* h5bp.com/t */
-  /* line 287, scss/style.scss */
+  /* line 298, scss/style.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 288, scss/style.scss */
+  /* line 299, scss/style.scss */
   img {
     max-width: 100% !important;
   }
@@ -680,13 +695,13 @@ body {
     margin: 0.5cm;
 }
 
-  /* line 290, scss/style.scss */
+  /* line 301, scss/style.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 291, scss/style.scss */
+  /* line 302, scss/style.scss */
   h2, h3 {
     page-break-after: avoid;
   }

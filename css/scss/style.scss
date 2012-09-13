@@ -7,8 +7,8 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 body { margin: 0; font-size: 1em; line-height: 1.4; }
-::-moz-selection { background: #ff0000; color: #fff; text-shadow: none; }
-::selection { background: #ff0000; color: #fff; text-shadow: none; }
+::-moz-selection { background: #03ac24; color: #fff; text-shadow: none; }
+::selection { background: #03ac24; color: #fff; text-shadow: none; }
 
 a { color: #00e; }
 a:visited { color: #551a8b; }
@@ -87,6 +87,7 @@ body {
 /***** Color Variables *****/
 
 $eyegreen: #03ac24;
+$background: #bebebe;
 
 /***** Header *****/
 
@@ -100,20 +101,7 @@ $eyegreen: #03ac24;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 2;
-
-	p {
-		color: #fff;
-		display: block;
-		float: left;
-		font-size: 18px;
-		font-style: italic;
-		margin: 2px 0 2px 14%;
-		padding: 0 10px;
-		text-shadow: 1px 1px 1px #222;
-
-		&:last-child { margin-left: 0; }
-	}	
+	z-index: 2;	
 
 	h1 {
 		color: #fff;
@@ -133,37 +121,60 @@ $eyegreen: #03ac24;
 		text-decoration: none;
 
 		&:hover { color: $eyegreen; }
-	} 
+	}
+
+	#reference { margin-left: 15%; }
+
+	#contact-me { 
+		display: none;
+		left: 19%;
+		position: fixed;
+		top: 90px;
+		width: 17%;
+
+		ul { background: #666; padding: 0 5px; text-align: center; }
+
+		li { 
+			border-bottom: 1px solid $background;
+			color: #fff;
+			font-size: 18px;
+			font-style: italic;
+			margin: 0;
+			padding: 5px 0;
+
+			&:last-child { border-bottom: none; }
+		}
+		a {
+			float: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
 }
 
 /***** Tabs *****/
 
 .tabs {
-	background-color: #bebebe;
-	-webkit-box-shadow:  0px 5px 8px 8px rgba(190, 190, 190, 1);
-    -moz-box-shadow:  0px 5px 8px 8px rgba(190, 190, 190, 1);
-    box-shadow:  0px 5px 8px 8px rgba(190, 190, 190, 1);
 	position: fixed;
-	top: 100px;
-	width: 100%;
-	z-index: 1;
+	top: 20px;
+	width: 50%;
+	left: 50%;
+	z-index: 5;
 
 	ul { height: 70px; padding: 10px 20px; }
 
-	li:last-child { float: right; }
-
 	li a { 
-		background: #000;
+		background: $background;
 		border-radius: 5px;
-		-webkit-box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-		-moz-box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-		box-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-		color: #eee;
+		-webkit-box-shadow: 2px 2px 10px rgba(200,200,200,0.8);
+		-moz-box-shadow: 2px 2px 10px rgba(200,200,200,0.8);
+		box-shadow: 2px 2px 10px rgba(200,200,200,0.8);
+		color: #000;
 		display: block; 
-		font-size: 20px; 
+		font-size: 16px; 
 		float: left; 
 		margin: 10px 15px; 
-		padding: 10px;
+		padding: 5px;
 		text-decoration: none;
 
 		&:hover { background: $eyegreen; color: #111; }
@@ -180,12 +191,12 @@ $eyegreen: #03ac24;
 	background-repeat: repeat-y, no-repeat;
 	background-size: 100%, 45%;
 	background-attachment: fixed;
-	margin-top: 185px;
+	margin-top: 95px;
 }
 
 .quarter {
 	color: #fff;
-	margin: 0 auto 100px auto;
+	margin: 0 auto;
 	width: 78%;
 
 	h2 {
@@ -215,8 +226,8 @@ $eyegreen: #03ac24;
 		padding: 5px 0;
 	}
 	li a:hover {
+		color: $eyegreen;
 		text-decoration: none;
-		text-shadow: 1px 1px 25px $eyegreen;
 	}
 
 }
