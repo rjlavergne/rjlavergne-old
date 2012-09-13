@@ -333,7 +333,7 @@ body {
 
 /* line 85, scss/style.scss */
 .container {
-  width: 86%;
+  width: 96%;
   margin: 0 auto;
 }
 
@@ -341,7 +341,7 @@ body {
 /***** Header *****/
 /* line 94, scss/style.scss */
 #header {
-  background: black url(../img/soniceyes.png) 5% 50% no-repeat;
+  background: black url(../img/soniceyes.png) 3% 50% no-repeat;
   background-size: 15%;
   -webkit-box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.9);
   -moz-box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.9);
@@ -356,7 +356,7 @@ body {
 #header h1 {
   color: #fff;
   font-size: 34px;
-  margin: 0 0 0 16%;
+  margin: 0 0 0 19%;
   text-shadow: 1px 1px 1px #222;
 }
 /* line 113, scss/style.scss */
@@ -376,7 +376,7 @@ body {
 }
 /* line 126, scss/style.scss */
 #header #reference {
-  margin-left: 15%;
+  margin-left: 17%;
 }
 /* line 128, scss/style.scss */
 #header #contact-me {
@@ -520,12 +520,47 @@ body {
   text-decoration: none;
 }
 
+/* line 235, scss/style.scss */
+.col {
+  float: left;
+  margin: 20px 3%;
+  text-align: center;
+  width: 43%;
+}
+/* line 242, scss/style.scss */
+.col a:hover {
+  color: #03ac24;
+}
+/* line 243, scss/style.scss */
+.col a img {
+  margin: 0;
+}
+/* line 244, scss/style.scss */
+.col a p {
+  font-size: 1.75em;
+  font-style: italic;
+}
+/* line 247, scss/style.scss */
+.col h5 {
+  font-size: 1.4em;
+  margin: 5px;
+}
+/* line 250, scss/style.scss */
+.col h5 span {
+  font-weight: 200;
+}
+/* line 252, scss/style.scss */
+.col p {
+  font-size: 1em;
+  margin: 5px;
+}
+
 /***** About Page *****/
-/* line 237, scss/style.scss */
+/* line 257, scss/style.scss */
 .about {
   padding-bottom: 20px;
 }
-/* line 240, scss/style.scss */
+/* line 260, scss/style.scss */
 .about img {
   border: 2px solid #999;
   border-radius: 10px;
@@ -534,23 +569,23 @@ body {
   margin: 15px 15px 10px 15px;
   position: relative;
 }
-/* line 248, scss/style.scss */
+/* line 268, scss/style.scss */
 .about h3 {
   margin: 10px;
   position: relative;
 }
-/* line 249, scss/style.scss */
+/* line 269, scss/style.scss */
 .about p {
   margin: 10px;
   position: relative;
   width: auto;
 }
-/* line 250, scss/style.scss */
+/* line 270, scss/style.scss */
 .about a {
   color: #03ac24;
   font-weight: bold;
 }
-/* line 251, scss/style.scss */
+/* line 271, scss/style.scss */
 .about h3 a {
   color: #fff;
 }
@@ -563,7 +598,7 @@ body {
    Please define your styles before this section.
    ========================================================================== */
 /* For image replacement */
-/* line 269, scss/style.scss */
+/* line 289, scss/style.scss */
 .ir {
   display: block;
   border: 0;
@@ -576,20 +611,20 @@ body {
   *line-height: 0;
 }
 
-/* line 270, scss/style.scss */
+/* line 290, scss/style.scss */
 .ir br {
   display: none;
 }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
-/* line 273, scss/style.scss */
+/* line 293, scss/style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-/* line 276, scss/style.scss */
+/* line 296, scss/style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -602,7 +637,7 @@ body {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-/* line 279, scss/style.scss */
+/* line 299, scss/style.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -613,31 +648,31 @@ body {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 282, scss/style.scss */
+/* line 302, scss/style.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* Contain floats: h5bp.com/q */
-/* line 285, scss/style.scss */
+/* line 305, scss/style.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 286, scss/style.scss */
+/* line 306, scss/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 287, scss/style.scss */
+/* line 307, scss/style.scss */
 .clearfix {
   *zoom: 1;
 }
 
 /* PRINT STYLES */
 @media print {
-  /* line 291, scss/style.scss */
+  /* line 311, scss/style.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -648,45 +683,45 @@ body {
   }
 
   /* Black prints faster: h5bp.com/s */
-  /* line 292, scss/style.scss */
+  /* line 312, scss/style.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 293, scss/style.scss */
+  /* line 313, scss/style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 294, scss/style.scss */
+  /* line 314, scss/style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 295, scss/style.scss */
+  /* line 315, scss/style.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
   /* Don't show links for images, or javascript/internal links */
-  /* line 296, scss/style.scss */
+  /* line 316, scss/style.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 297, scss/style.scss */
+  /* line 317, scss/style.scss */
   thead {
     display: table-header-group;
   }
 
   /* h5bp.com/t */
-  /* line 298, scss/style.scss */
+  /* line 318, scss/style.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 299, scss/style.scss */
+  /* line 319, scss/style.scss */
   img {
     max-width: 100% !important;
   }
@@ -695,13 +730,13 @@ body {
     margin: 0.5cm;
 }
 
-  /* line 301, scss/style.scss */
+  /* line 321, scss/style.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 302, scss/style.scss */
+  /* line 322, scss/style.scss */
   h2, h3 {
     page-break-after: avoid;
   }

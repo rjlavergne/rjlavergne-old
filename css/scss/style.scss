@@ -82,7 +82,7 @@ body {
 	background-attachment: fixed;
 	font-family: Helvetica, Arial, sans-serif;
 }
-.container { width: 86%; margin: 0 auto; }
+.container { width: 96%; margin: 0 auto; }
 
 /***** Color Variables *****/
 
@@ -92,7 +92,7 @@ $background: #bebebe;
 /***** Header *****/
 
 #header {
-	background: #000 url(../img/soniceyes.png) 5% 50% no-repeat;
+	background: #000 url(../img/soniceyes.png) 3% 50% no-repeat;
 	background-size: 15%;
 	-webkit-box-shadow:  0px 5px 20px 8px rgba(0, 0, 0, .9);
     -moz-box-shadow:  0px 5px 20px 8px rgba(0, 0, 0, .9);
@@ -106,7 +106,7 @@ $background: #bebebe;
 	h1 {
 		color: #fff;
 		font-size: 34px;
-		margin: 0 0 0 16%;
+		margin: 0 0 0 19%;
 		text-shadow: 1px 1px 1px #222;
 	}
 	
@@ -123,7 +123,7 @@ $background: #bebebe;
 		&:hover { color: $eyegreen; }
 	}
 
-	#reference { margin-left: 15%; }
+	#reference { margin-left: 17%; }
 
 	#contact-me { 
 		display: none;
@@ -230,6 +230,26 @@ $background: #bebebe;
 		text-decoration: none;
 	}
 
+}
+
+.col {
+	float: left;
+	margin: 20px 3%;
+	text-align: center;
+	width: 43%;
+
+	a {
+		&:hover { color: $eyegreen; }
+		img { margin: 0; }
+		p { font-size: 1.75em; font-style: italic; }
+	}
+
+	h5 { 
+		font-size: 1.4em; 
+		margin: 5px; 
+		span { font-weight: 200; }
+	}
+	p { font-size: 1em; margin: 5px; }
 }
 
 /***** About Page *****/
