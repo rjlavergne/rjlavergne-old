@@ -236,10 +236,10 @@ $background: #bebebe;
 	border-bottom: 1px solid #ccc;
 	float: left;
 	margin: 20px 3%;
-	min-height: 380px;
+	min-height: 400px;
 	padding-bottom: 20px;
 	text-align: center;
-	width: 40%;
+	width: 42%;
 
 	a {
 		&:hover { color: $eyegreen; }
@@ -248,8 +248,9 @@ $background: #bebebe;
 	}
 
 	h5 { 
+		display: block;
 		font-size: 1.4em; 
-		margin: 5px; 
+		margin: 20px 5px; 
 		span { font-weight: 200; }
 	}
 	p { font-size: 1em; margin: 5px; }
