@@ -233,10 +233,13 @@ $background: #bebebe;
 }
 
 .col {
+	border-bottom: 1px solid #ccc;
 	float: left;
 	margin: 20px 3%;
+	min-height: 380px;
+	padding-bottom: 20px;
 	text-align: center;
-	width: 43%;
+	width: 40%;
 
 	a {
 		&:hover { color: $eyegreen; }
