@@ -524,9 +524,9 @@ body {
 .col {
   border-bottom: 1px solid #ccc;
   float: left;
-  margin: 20px 3%;
+  margin: 20px 3% 40px 3%;
   min-height: 400px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   text-align: center;
   width: 42%;
 }
@@ -559,12 +559,24 @@ body {
   margin: 5px;
 }
 
+/* line 259, scss/style.scss */
+.quart {
+  margin: 10px;
+  min-height: auto;
+  text-align: left;
+}
+/* line 264, scss/style.scss */
+.quart h4 {
+  font-size: 1.5em;
+  margin: 5px 0;
+}
+
 /***** About Page *****/
-/* line 261, scss/style.scss */
+/* line 269, scss/style.scss */
 .about {
   padding-bottom: 20px;
 }
-/* line 264, scss/style.scss */
+/* line 272, scss/style.scss */
 .about img {
   border: 2px solid #999;
   border-radius: 10px;
@@ -573,23 +585,23 @@ body {
   margin: 15px 15px 10px 15px;
   position: relative;
 }
-/* line 272, scss/style.scss */
+/* line 280, scss/style.scss */
 .about h3 {
   margin: 10px;
   position: relative;
 }
-/* line 273, scss/style.scss */
+/* line 281, scss/style.scss */
 .about p {
   margin: 10px;
   position: relative;
   width: auto;
 }
-/* line 274, scss/style.scss */
+/* line 282, scss/style.scss */
 .about a {
   color: #03ac24;
   font-weight: bold;
 }
-/* line 275, scss/style.scss */
+/* line 283, scss/style.scss */
 .about h3 a {
   color: #fff;
 }
@@ -602,7 +614,7 @@ body {
    Please define your styles before this section.
    ========================================================================== */
 /* For image replacement */
-/* line 293, scss/style.scss */
+/* line 301, scss/style.scss */
 .ir {
   display: block;
   border: 0;
@@ -615,20 +627,20 @@ body {
   *line-height: 0;
 }
 
-/* line 294, scss/style.scss */
+/* line 302, scss/style.scss */
 .ir br {
   display: none;
 }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
-/* line 297, scss/style.scss */
+/* line 305, scss/style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-/* line 300, scss/style.scss */
+/* line 308, scss/style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -641,7 +653,7 @@ body {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-/* line 303, scss/style.scss */
+/* line 311, scss/style.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -652,31 +664,31 @@ body {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 306, scss/style.scss */
+/* line 314, scss/style.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* Contain floats: h5bp.com/q */
-/* line 309, scss/style.scss */
+/* line 317, scss/style.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 310, scss/style.scss */
+/* line 318, scss/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 311, scss/style.scss */
+/* line 319, scss/style.scss */
 .clearfix {
   *zoom: 1;
 }
 
 /* PRINT STYLES */
 @media print {
-  /* line 315, scss/style.scss */
+  /* line 323, scss/style.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -687,45 +699,45 @@ body {
   }
 
   /* Black prints faster: h5bp.com/s */
-  /* line 316, scss/style.scss */
+  /* line 324, scss/style.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 317, scss/style.scss */
+  /* line 325, scss/style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 318, scss/style.scss */
+  /* line 326, scss/style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 319, scss/style.scss */
+  /* line 327, scss/style.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
   /* Don't show links for images, or javascript/internal links */
-  /* line 320, scss/style.scss */
+  /* line 328, scss/style.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 321, scss/style.scss */
+  /* line 329, scss/style.scss */
   thead {
     display: table-header-group;
   }
 
   /* h5bp.com/t */
-  /* line 322, scss/style.scss */
+  /* line 330, scss/style.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 323, scss/style.scss */
+  /* line 331, scss/style.scss */
   img {
     max-width: 100% !important;
   }
@@ -734,13 +746,13 @@ body {
     margin: 0.5cm;
 }
 
-  /* line 325, scss/style.scss */
+  /* line 333, scss/style.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 326, scss/style.scss */
+  /* line 334, scss/style.scss */
   h2, h3 {
     page-break-after: avoid;
   }
